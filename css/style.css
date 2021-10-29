@@ -1,0 +1,15 @@
+body {
+  /* background: red; */
+}
+.a {
+  color: pink;
+background: url(../img/5.jpeg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.b {
+  color: blue;
+}

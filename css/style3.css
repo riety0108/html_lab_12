@@ -1,0 +1,21 @@
+body{background: whitesmoke;}
+.a{color: salmon;text-align: center;font-style: italic;}
+.b{color: sandybrown;text-align: center;font-size: 18pt;}
+.c{color: tan;text-align: center;background: url(../img/6.jpeg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 14pt;
+    
+  }
+  h1 {
+    position: relative;
+    padding: 0.25em 0;
+  }
+  h1:after {
+    content: "";
+    display: block;
+    height: 10px;
+    background: -webkit-linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+    background: linear-gradient(to right, rgb(255, 186, 115), #ffb2b2);
+  }

@@ -1,0 +1,98 @@
+
+.a {
+  color: pink;
+  text-align: center;
+  font-style:italic;
+}
+
+.b {
+  color: orange;text-align:center;font-size: 15pt;height: 500px;background-image:url(../img/6.jpeg) ;
+} 
+
+.c {
+  color: plum;text-align: center;
+}
+.d {
+  color: rosybrown;text-align: center;
+}
+
+body {
+    height: calc(100vh - 8em);
+    padding: 4em;
+  }
+
+.line-1 {
+  /* position: relative; */
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+    color: pink;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.box {
+  margin: 30px auto;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #edde93;
+  display: block;
+  position: relative;
+}
+
+.box::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: kiran 3s ease-in-out infinite;
+}
+@keyframes kiran {
+  0% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
